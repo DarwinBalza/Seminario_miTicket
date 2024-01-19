@@ -1,0 +1,7 @@
+{
+  "name": "tuBoleta",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
