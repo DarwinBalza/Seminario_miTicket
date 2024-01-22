@@ -1,31 +1,32 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
   <swiper-container
-  [loop]="true"
-  [pagination]="true">
-  <swiper-slide>
-    <h1 class="red-title">Titulo 1</h1>
-    <p>
-      Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impreso
-    </p>
-    <img src="https://www.nationalgeographic.com.es/medio/2022/12/12/aguila-2_d7d2206b_221212153725_310x310.jpg"/>
-    <p>Swipe para continuar</p>
-  </swiper-slide>
-  <swiper-slide>slide 2</swiper-slide>
-  <swiper-slide>slide 3</swiper-slide>
-  <swiper-slide>slide 4</swiper-slide>
-  <swiper-slide>slide 5</swiper-slide>
+  [pagination]="true"
+  >
+    <swiper-slide>
+      <h1 class="titulo_slide">Tu Pasaporte al Entretenimiento</h1>
+      <img src="../../assets/images/image1.png">
+      <p>Bienvenido a nuestra aplicación, Descubre la comodidad de comprar tus boletas de cine en un solo lugar 
+        evitando las colas y asegurando tu asiento 
+        en cada función.</p>
+      <p class="texto_ayuda">Desliza para continuar</p>
+    </swiper-slide>
+    <swiper-slide>
+      <h1 class="titulo_slide">Navegación Sencilla, Experiencia Completa</h1>
+      <img src="../../assets/images/image2.png">
+      <p>Explora nuestra interfaz intuitiva diseñada pensando en ti. Desde la selección de películas hasta la compra de boletas, 
+        cada paso es claro y eficiente.</p>
+      <p class="texto_ayuda">Desliza para continuar</p>
+    </swiper-slide>
+    <swiper-slide>
+      <h1 class="titulo_slide">Boletas al Instante, Sin Estrés</h1>
+      <img src="../../assets/images/image3.png">
+      <p>Olvídate de las preocupaciones al comprar tus boletas. Con nuestra aplicación, disfruta de una venta de boletas sin complicaciones. 
+        Elige tus películas favoritas, selecciona tu asiento preferido y asegura tu lugar para vivir momentos inolvidables en el cine <br><br>
+        ¡La magia del cine comienza aquí!</p>
+      <ion-button>iniciar</ion-button>
+    </swiper-slide>
   </swiper-container>
 </ion-content>
