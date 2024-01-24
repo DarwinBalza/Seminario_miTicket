@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { CanActivate, Router } from '@angular/router';
+import { Storage } from '@ionic/storage-angular';
 
 @Component({
   selector: 'app-intro',
@@ -32,11 +33,35 @@ export class IntroPage{
     }
   ]
 
-  constructor(private router: Router) {}
+  constructor(
+    private router: Router,
+    private storage: Storage
+  ) {}
 
-  goToHome(){
-    console.log("go to home");
+  async ionViewDidEnter() {
+    console.log("Comprobar intro");
+    const mostreIntro = await this.storage.get('mostreLaIntro');
+    if (mostreIntro) {
+      // El usuario ya ha visto la introducción, redirigir a la página principal
+      console.log("Introduccion vista");
+      this.router.navigateByUrl('/home');
+    } else {
+      // El usuario aún no ha visto la introducción, seguir en la página de introducción
+      console.log("Intro aún no vista");
+    }
+  }
+  async IntroVista() {
+    await this.storage.set('mostreLaIntro', true);
     this.router.navigateByUrl('/home');
   }
 
+  //Botones
+  gotoHome(){
+    console.log("Introduccion vista")
+    this.IntroVista();
+  }
+  omitirIntro(){
+    console.log("Introduccion vista")
+    this.IntroVista();
+  }
 }

@@ -10,8 +10,8 @@
       <img src={{slide.image}}>
       <p [innerHTML]="slide.description">{{slide.description}}</p>
       <p class="texto_ayuda">{{slide.texto_ayuda}}</p>
-        <ion-button class="iniciar" (click)="goToHome()" *ngIf="i==2">INICIAR</ion-button>
-        <ion-button class="omitir" (click)="goToHome()" fill="outline" *ngIf="i==0">Omitir</ion-button>
+        <ion-button class="iniciar" (click)="gotoHome()" *ngIf="i==2">INICIAR</ion-button>
+        <ion-button class="omitir" (click)="omitirIntro()" fill="outline" *ngIf="i==0">Omitir</ion-button>
     </swiper-slide>
   </swiper-container>
 </ion-content>
