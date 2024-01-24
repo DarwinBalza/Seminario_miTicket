@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar class="ion-text-center">
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form [formGroup]="loginForm" (ngSubmit)="login(loginForm.value)">
+    <ion-item>
+      <ion-input label="Correo" labelPlacement="floating" placeholder="Ingrese Correo" formControlName="email"></ion-input>
+    </ion-item>
+     <ion-button 
+     type="submit" 
+     [disabled]="!loginForm.valid"
+     color="medium"
+     >LOGIN</ion-button>
+  </form>
+</ion-content>
