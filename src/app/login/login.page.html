@@ -1,17 +1,37 @@
-<ion-header>
-  <ion-toolbar class="ion-text-center">
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-<ion-content>
+<ion-content 
+class="ion-text-center">
+  <h1>!INICIA SESION¡</h1>
+  <img src="../../assets/images/image4.png">
   <form [formGroup]="loginForm" (ngSubmit)="login(loginForm.value)">
-    <ion-item>
+    <ion-item class="el_item">
       <ion-input label="Correo" labelPlacement="floating" placeholder="Ingrese Correo" formControlName="email"></ion-input>
     </ion-item>
-     <ion-button 
-     type="submit" 
-     [disabled]="!loginForm.valid"
-     color="medium"
-     >LOGIN</ion-button>
+    <div class="validation_message">
+      <ng-container *ngFor="let validation of validation_messages.email">
+        <div *ngIf="
+        (loginForm.get('email')?.hasError(validation.type) &&
+        loginForm.get('email')?.dirty)
+        ">{{validation.message}}</div>
+      </ng-container>
+    </div>
+    <ion-item class="el_item">
+      <ion-input label="Contraseña" labelPlacement="floating" placeholder="Ingrese Contraseña" type="password" formControlName="password"></ion-input>
+    </ion-item>
+    <div class="validation_message">
+      <ng-container *ngFor="let validation of validation_messages.password">
+        <div *ngIf="
+        (loginForm.get('password')?.hasError(validation.type) &&
+        loginForm.get('password')?.dirty)
+        ">{{validation.message}}</div>
+      </ng-container>
+    </div>
+     <ion-button type="submit" [disabled]="!loginForm.valid">!INICIAR¡</ion-button>
+     <p>¿Aun no te has registrado?</p>
+      <a (click)="redirectToRegister()">Regístrate</a>
   </form>
+  <div class = "validation_messages">
+    {{loginMessage}}
+</div>
 </ion-content>
+
+<!-- <ion-toast trigger="open-toast" message="This toast will disappear after 5 seconds" [duration]="5000"></ion-toast> -->

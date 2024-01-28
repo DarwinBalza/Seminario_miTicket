@@ -11,21 +11,23 @@ img{
 }
 
 h1{
-    padding-top: 30px;
+    padding-top: 5px;
     color: #524dff;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
 p{
-    color: #9b7bff;
+    padding-top: 5px;
+    color: #524dff;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold; 
+    font-weight: bold;
+    margin: 0;
 }
 
 ion-item {
     --background:white;
-    padding: 10px;
+    padding: 5px;
     padding-top: 0;
     --border-radius: 10px;
 
@@ -39,8 +41,7 @@ ion-item {
 .validation_message{
     font-size: 12px;
     font-family: Verdana, Tahoma, sans-serif;
-    padding-top: 1px;
-    color: #012547;
+    color: red;
     font-weight: bold;
 }
 
@@ -69,12 +70,11 @@ ion-button {
     --padding-bottom: 10px;
 
     padding-top: 1px;
-  }
-
-  a{
+  }  
+  
+a{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: underline;
     color: #524dff;
     font-weight: bold;
   }
-
