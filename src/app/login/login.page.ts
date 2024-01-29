@@ -57,15 +57,17 @@ export class LoginPage implements OnInit {
     this.navCtrl.navigateForward('/register');
   }
 
-  login(login_data: any){
-    console.log(login_data)
-    this.AuthService.loginUser(login_data).then(res => {
-      this.loginMessage = res;
-      this.storage.set('userLoggedIn', true)
-      this.navCtrl.navigateForward('/home')
-    }).catch(err => {
-      this.loginMessage = err;
-    })
+  login(login_data: any) {
+    console.log(login_data);
+    this.AuthService.loginUser(login_data)
+      .then(res => {
+        this.loginMessage = res;
+        this.storage.set('userLoggedIn', true);
+        this.navCtrl.navigateForward('/home');
+      })
+      .catch(err => {
+        this.loginMessage = err;
+      });
   }
 
 }

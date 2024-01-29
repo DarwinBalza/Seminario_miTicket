@@ -5,7 +5,6 @@ ion-content{
 }
 
 img{
-    --overflow: hidden;
     width: 190px; 
     height: auto;
 }
@@ -27,7 +26,6 @@ ion-item {
     --background:white;
     padding: 10px;
     padding-top: 0;
-    --border-radius: 10px;
 
     color: #524dff;
 
@@ -68,7 +66,6 @@ ion-button {
     --padding-top: 10px;
     --padding-bottom: 10px;
 
-    padding-top: 1px;
   }
 
   a{

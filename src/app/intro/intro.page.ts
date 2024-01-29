@@ -44,7 +44,7 @@ export class IntroPage{
     if (mostreIntro) {
       // El usuario ya ha visto la introducción, redirigir a la página principal
       console.log("Introduccion vista");
-      this.router.navigateByUrl('/intro');
+      this.router.navigateByUrl('/home');
     } else {
       // El usuario aún no ha visto la introducción, seguir en la página de introducción
       console.log("Intro aún no vista");
