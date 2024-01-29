@@ -19,4 +19,22 @@ export class AuthService {
       }
     });
   }
+
+
+  registerUser(credential: any){
+    return new Promise((accept, reject) => {
+      if(
+        credential.firstName &&
+        credential.lastName &&
+        credential.email &&
+        credential.password &&
+        credential.confirm_password
+      ){
+        accept('Registro Correcto')
+      }else{
+        reject('Registro Incorrecto')
+      }
+    });
+
+  }
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, MinLengthValidator, Validators } from '@angular/forms';
+import { AuthService } from '../services/auth.service';
 import { NavController } from '@ionic/angular';
 import { Storage } from '@ionic/storage-angular';
 
@@ -38,6 +39,7 @@ export class RegisterPage implements OnInit {
   constructor(
     private formBiulder: FormBuilder,
     private navCtrl: NavController,
+    private AuthService: AuthService,
     private storage: Storage
   ) { 
     this.registerForm = this.formBiulder.group({
@@ -83,9 +85,10 @@ export class RegisterPage implements OnInit {
     this.navCtrl.navigateForward('/login');
   }
 
-  register(register_data: any){
-    console.log(register_data)
-    this.registrationSuccess = true;
+  register(register_data: any) {
+    console.log("Registro exitoso", register_data);
+    this.storage.set('registeredUserData', register_data);
+    this.navCtrl.navigateForward('/login');
   }
 
   passwordMatchValidator(group: FormGroup) {
@@ -95,3 +98,5 @@ export class RegisterPage implements OnInit {
   }
 
 }
+
+// this.registrationSuccess = true;
