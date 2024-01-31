@@ -24,6 +24,7 @@ p{
 
 ion-item {
     --background:white;
+    position: relative;
     padding: 10px;
     padding-top: 0;
 
@@ -75,3 +76,16 @@ ion-button {
     font-weight: bold;
   }
 
+  .input-container {
+    position: relative;
+  }
+
+  .icono_ojo{
+    font-size: 23px;
+    position: absolute;
+    right: 23px;
+    top: 28%;
+    color: #9b7bff;
+    z-index: 1;
+    cursor: pointer;
+  }

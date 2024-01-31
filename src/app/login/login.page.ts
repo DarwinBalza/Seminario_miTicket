@@ -10,6 +10,7 @@ import { Storage } from '@ionic/storage-angular';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
+  mostrarPassword = false;
   loginForm: FormGroup;
   validation_messages = {
     email:[
@@ -48,6 +49,10 @@ export class LoginPage implements OnInit {
         ])
       )
     })
+  }
+
+  togglePasswordVisibility() {
+    this.mostrarPassword = !this.mostrarPassword;
   }
 
   ngOnInit() {

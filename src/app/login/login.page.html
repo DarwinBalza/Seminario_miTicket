@@ -1,4 +1,4 @@
-<ion-content 
+<ion-content
 class="ion-text-center">
   <h1>!INICIA SESION¡</h1>
   <img src="../../assets/images/image4.png">
@@ -14,9 +14,14 @@ class="ion-text-center">
         ">{{validation.message}}</div>
       </ng-container>
     </div>
+
+    <div class="input-container">
     <ion-item class="el_item">
-      <ion-input label="Contraseña" labelPlacement="floating" placeholder="Ingrese Contraseña" type="password" formControlName="password"></ion-input>
+      <ion-input label="Contraseña" labelPlacement="floating" placeholder="Ingrese Contraseña" [type]="mostrarPassword ? 'text' : 'password'" formControlName="password"></ion-input>
     </ion-item>
+    <ion-icon class="icono_ojo" (click)="togglePasswordVisibility()" [name]="mostrarPassword ? 'eye' : 'eye-off'"></ion-icon>
+    </div>
+
     <div class="validation_message">
       <ng-container *ngFor="let validation of validation_messages.password">
         <div *ngIf="
