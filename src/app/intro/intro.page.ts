@@ -44,7 +44,7 @@ export class IntroPage{
     if (mostreIntro) {
       // El usuario ya ha visto la introducción, redirigir a la página principal
       console.log("Introduccion vista");
-      this.router.navigateByUrl('/home');
+      this.router.navigateByUrl('/login');
     } else {
       // El usuario aún no ha visto la introducción, seguir en la página de introducción
       console.log("Intro aún no vista");
@@ -52,7 +52,7 @@ export class IntroPage{
   }
   async IntroVista() {
     await this.storage.set('mostreLaIntro', true);
-    this.router.navigateByUrl('/home');
+    this.router.navigateByUrl('/login');
   }
 
   //Botones
