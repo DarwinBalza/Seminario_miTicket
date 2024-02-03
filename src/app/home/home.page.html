@@ -7,11 +7,12 @@
     </ion-toolbar>
 </ion-header>
 <ion-content>
+    <h1 class="encab">LISTA DE EVENTOS</h1>
     <ion-list *ngFor="let slide of event_list">
         <ion-item>
-            <ion-thumbnail slot="start">
-                <img src="{{slide.image}}">
-            </ion-thumbnail>
+            <div style="width: 100px; height: 100px;" slot="start">
+                <img src="{{slide.image}}" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
             <ion-label>
                 <h2>{{slide.name}}</h2>
                 <p>{{slide.description}}</p>

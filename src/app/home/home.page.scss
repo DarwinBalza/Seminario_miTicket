@@ -9,6 +9,16 @@ ion-content, ion-item{
   --background: white;
 }
 
+.encab{
+  color: #09152c;
+  font-family: 'Lucida Sans', sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  margin: 5px;
+}
+
 ion-toolbar{
   --background: #09152c;
 }
@@ -25,17 +35,18 @@ ion-menu-button{
 
 ion-list{
   --border-color: #09152c;
-  --border-width: 2px;
 }
 
 h2{
   color: #0fdcab;
+  text-align: center;
   font-size: 15px;
   font-weight: bold;
 }
 
 p{
   color: #09152c;
+  text-align: justify;
 }
 
 img{
