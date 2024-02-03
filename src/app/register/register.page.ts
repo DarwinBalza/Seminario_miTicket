@@ -10,8 +10,8 @@ import { Storage } from '@ionic/storage-angular';
   styleUrls: ['./register.page.scss'],
 })
 export class RegisterPage implements OnInit {
-  mostrarPassword1 = false;
-  mostrarPassword2 = false;
+ mostrarPassword1 = false;
+  mostrarPassword2 = false; 
 
   registerForm: FormGroup;
   registrationSuccess = false;
