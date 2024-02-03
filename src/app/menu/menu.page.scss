@@ -1,0 +1,20 @@
+ion-toolbar, ion-content{
+    --background: #09152c;
+    --border-color: #09152c;
+    color: white;
+    
+}
+
+ion-item{
+    --overflow: hidden;
+    --background: #09152c;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    --border-color: #09152c;
+}
+
+ion-icon{
+    color: #0fdcab;
+    margin: 15px;
+}

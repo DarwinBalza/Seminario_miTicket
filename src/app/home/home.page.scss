@@ -4,3 +4,40 @@
   align-items: center;
   justify-content: center;
 }
+
+ion-content, ion-item{
+  --background: white;
+}
+
+ion-toolbar{
+  --background: #09152c;
+}
+
+.title{
+  color: #0fdcab;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+  font-size: 20px;
+}
+
+ion-menu-button{
+  color: #0fdcab;
+}
+
+ion-list{
+  --border-color: #09152c;
+  --border-width: 2px;
+}
+
+h2{
+  color: #0fdcab;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+p{
+  color: #09152c;
+}
+
+img{
+  font-size: 100px;
+}

@@ -1,11 +1,21 @@
 <ion-header>
     <ion-toolbar>
-        <ion-buttons slot="end">
+        <ion-title class="title">TuBoleta</ion-title>
+        <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
         </ion-buttons>
     </ion-toolbar>
 </ion-header>
 <ion-content>
-hola soy el home 
-<ion-button (click)="goToIntro()">Volver a la intro</ion-button>
+    <ion-list *ngFor="let slide of event_list">
+        <ion-item>
+            <ion-thumbnail slot="start">
+                <img src="{{slide.image}}">
+            </ion-thumbnail>
+            <ion-label>
+                <h2>{{slide.name}}</h2>
+                <p>{{slide.description}}</p>
+            </ion-label>
+        </ion-item>
+    </ion-list>
 </ion-content>

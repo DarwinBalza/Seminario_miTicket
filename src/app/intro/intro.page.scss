@@ -14,7 +14,7 @@ swiper-container{
   .titulo_slide{
     font-size: 25px;
     text-align: center;
-    color: #524dff;
+    color: #09152c;
     font-family: 'Arial', sans-serif;
     font-weight: bold;
     padding: 5px;
@@ -23,7 +23,7 @@ swiper-container{
   }
   
   p{
-    color: #9b7bff;
+    color: #09152c;
     text-align: center;
     font-family: 'Arial', sans-serif;
     font-weight: bold;
@@ -33,7 +33,7 @@ swiper-container{
   }
   
   .texto_ayuda{
-    color: #524dff;
+    color: #0fdcab;
   }
   
   img {
@@ -42,31 +42,32 @@ swiper-container{
   }
   
   .iniciar {
-    --background: white;
-    --background-activated: gray;
+    --background: #09152c;
+    --background-activated: #09152c;
   
     --border-radius: 10px;
-    --border-color: #8c8c8c;
+    --border-color: #09152c;
     
-    --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25), 0 0 0 2px #9b7bff;
+    --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25), 0 0 0 2px #09152c;
     --padding-top: 1vh;
     --padding-bottom: 1vh;
-    color: #524dff;
+    color: #0fdcab;
     font-weight: bold;
+    padding-top: 30px;
     width: 90vw;
     font-size: 3vmin
   }
 
   .omitir{
-    --background: white;
-    --background-activated: #9b7bff;
+    --background: #09152c;
+    --background-activated: #09152c;
 
     --border-radius: 10px;
-    --border-color: #9b7bff;
-    --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25), 0 0 0 2px #9b7bff;
+    --border-color: #09152c;
+    --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25), 0 0 0 2px #09152c;
     --padding-top: 1vh;
     --padding-bottom: 1vh;
-    color: #524dff;
-    margin-top: 20px;
+    color: #0fdcab;
+    margin-top: 10px;
 
   }

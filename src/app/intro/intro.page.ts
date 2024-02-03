@@ -11,24 +11,24 @@ export class IntroPage{
 
   slides = [
     {
-      title: "TU PASAPORTE ALENTRETENIMIENTO",
-      image: "../../assets/images/image2.png",
-      description: "Bienvenido a nuestra aplicación, Descubre la comodidad de comprar tus boletas de cine en un solo lugar evitando las colas y asegurando tu asiento en cada función.",
+      title: "Tu Entrada al Entretenimiento Simplificado",
+      image: "../../assets/images/image2.jpg",
+      description: "Con una interfaz sencilla y fácil de usar, tuBoleta redefine la experiencia de compra de boletos. Su diseño intuitivo permite a los usuarios navegar de manera eficiente, facilitando la obtención de entradas para una amplia variedad de eventos deportivos.",
       texto_ayuda: "Desliza para continuar",
       class: "slide-1"
     },
     {
-      title: "NAVEGACIÓN SENCILLA, EXPERIENCIA COMPLETA",
+      title: "tuBoleta, Mucho Más que Boletos de Deportes",
       image: "../../assets/images/image1.png",
-      description: "Explora nuestra interfaz intuitiva diseñada pensando en ti. Desde la selección de películas hasta la compra de boletas, cada paso es claro y eficiente.",
+      description: "tuBoleta no se limita al fútbol; es tu ventana a un mundo de entretenimiento. Visualiza y adquiere boletos para eventos importantes de Tenis, Baloncesto y ¡Mucho Más!, todo en un solo lugar.",
       texto_ayuda: "Desliza para continuar",
       class: "slide-2"
     },
     {
-      title: "BOLETAS AL INSTANTE, SIN ESTRÉS",
-      image: "../../assets/images/image3.png",
-      description: "Olvídate de las preocupaciones al comprar tus boletas. Con nuestra aplicación, disfruta de una venta de boletas sin complicaciones. Elige tus películas favoritas, selecciona tu asiento preferido y asegura tu lugar para vivir momentos inolvidables en el cine.",
-      texto_ayuda: "¡La magia del cine comienza aquí!",
+      title: "Conectar Pasiones y Facilitar Experiencias Inolvidables",
+      image: "../../assets/images/image3.jpg",
+      description: "Olvídate de las preocupaciones al comprar tus boletas. Con nuestra aplicación, disfruta de una venta de boletas sin complicaciones. Elige tu deporte favorito y asegura tu lugar para vivir momentos inolvidables.",
+      texto_ayuda: "¡Descubre, compra y vive con tuBoleta!",
       class: "slide-3"
     }
   ]

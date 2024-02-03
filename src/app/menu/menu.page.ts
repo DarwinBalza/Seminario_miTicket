@@ -26,4 +26,8 @@ export class MenuPage implements OnInit {
     this.navCtrl.navigateRoot("/login")
   }
 
+  Regitrar(){
+    this.navCtrl.navigateRoot("/register")
+  }
+
 }
